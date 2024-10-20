@@ -3,19 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>beatmaker</title>
+    <title>yooo</title>
+
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./img/emoji-32-512.webp"
+  />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Danfo&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
     <div class="sequencer">
       <!-----------------------------KICK ----------------------------->
       <div class="kick-track">
         <div class="controls">
-          <h1>Kick</h1>
+          <h1 class="h1-kick">Kick</h1>
           <button data-track="0" class="mute kick-volume">
             <i class="fa-solid fa-volume-xmark"></i>
           </button>
-          <select name="kick-select" id="kick-select">
+          <select class="select" name="kick-select" id="kick-select">
             <option value="./Sounds/kick-classic.wav">Classic Kick</option>
             <option value="./Sounds/kick-808.wav">808 Kick</option>
             <option value="./Sounds/kick-heavy.wav">Kick Heavy</option>
@@ -36,11 +53,11 @@
       <!----------------------------- SNARE ---------------------------->
       <div class="snare-track">
         <div class="controls">
-          <h1>Snare</h1>
+          <h1 class="h1-snare">Snare</h1>
           <button data-track="1" class="mute snare-volume">
             <i class="fa-solid fa-volume-xmark"></i>
           </button>
-          <select name="snare-select" id="snare-select">
+          <select class="select" name="snare-select" id="snare-select">
             <option value="./Sounds/snare-acoustic01.wav">Classic Snare</option>
             <option value="./Sounds/snare-808.wav">808 Snare</option>
             <option value="./Sounds/snare-vinyl01.wav">Snare Vinyl</option>
@@ -60,11 +77,11 @@
       <!---------------------------------------- HIHAT ----------------------------->
       <div class="hihat-track">
         <div class="controls">
-          <h1>Hihat</h1>
-          <button data-track="2" class="mute hihat-volume">
+          <h1 class="h1-hihat">Hihat</h1>
+          <button  data-track="2" class=" mute hihat-volume">
             <i class="fa-solid fa-volume-xmark"></i>
           </button>
-          <select name="hihat-select" id="hihat-select">
+          <select class="select" name="hihat-select" id="hihat-select">
             <option value="./Sounds/hihat-acoustic01.wav">
               Hihat Acoustic
             </option>
@@ -97,6 +114,7 @@
     <audio class="kick-sound" src="./Sounds/kick-classic.wav"></audio>
     <audio class="snare-sound" src="./Sounds/snare-acoustic01.wav"></audio>
     <audio class="hihat-sound" src="./Sounds/hihat-acoustic01.wav"></audio>
+    </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"

@@ -10,6 +10,33 @@ i,
 svg {
   pointer-events: none;
 }
+.container{
+  background-color: #0B192C;
+}
+/* Global */
+.select{
+  background-color: #3C3D37;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  
+}
+/* end Global */
+h1{
+  font-family: "Danfo", serif;
+  font-size: 3rem;
+}
+.h1-kick{
+  color:#5B99C2 ;
+}
+.h1-snare{
+  color:#fa6b6b ;
+}
+.h1-hihat{
+  color:#FFAD60;
+
+}
+
 
 .kick-pad,
 .snare-pad,
@@ -21,23 +48,23 @@ svg {
 }
 
 .kick-pad {
-  background: rgb(112, 174, 224);
+  background: #5B99C2;
 }
 .snare-pad {
-  background: rgb(187, 128, 196);
+  background: #fa6b6b;
 }
 .hihat-pad {
-  background: rgb(247, 137, 137);
+  background: #FFAD60;
 }
 
 .kick-pad.active {
-  background: rgb(42, 87, 123);
+  background: #134B70;
 }
 .snare-pad.active {
-  background: rgb(146, 55, 158);
+  background: #C62E2E;
 }
 .hihat-pad.active {
-  background: rgb(146, 57, 57);
+  background: #A66E38;
 }
 
 .sequencer {
@@ -72,7 +99,7 @@ svg {
 .controls button {
   border: none;
   padding: 1rem;
-  background: rgb(101, 101, 101);
+  background:#FF6500;
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -82,19 +109,32 @@ svg {
   transition: all 0.5s ease;
 }
 .play {
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  background: rgb(101, 101, 101);
+  padding: 1rem 20rem;
+  font-size:2rem;
+  background: #3C3D37;
   color: white;
   border: none;
   cursor: pointer;
   margin-top: 3rem;
+  border-radius: 10px;
+  transition: all .3s ease;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.4rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #e2781b;
+}
+.play:hover{
+  color: #FF6500;
+  box-shadow: -0.2rem -0.2rem 0.2rem #e64334;
+  letter-spacing:.1rem;
+
 }
 select {
   padding: 1rem;
   font-size: 1rem;
 }
-
+.mute{
+  background-color:#FF6500 ;
+}
 .mute.active {
   background-color: black;
 }
@@ -104,19 +144,22 @@ select {
   width: 30%;
 }
 .tempo-slider {
-  padding: 0.2rem;
+  padding: 0.1rem;
   -webkit-appearance: none;
   margin: 1rem 0rem;
-  width: 100%;
+  width:100%;
   position: relative;
-  background: rgb(80, 80, 80);
-  cursor: pointer;
+  background:#FF6500;
+  cursor: move;
   border-radius: 1rem;
 }
 .tempo p {
   margin: 2rem;
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 0;
+  font-family: "Permanent Marker", cursive;
+  color: white;
 }
 
 @keyframes playTrack {
